@@ -1,0 +1,31 @@
+.ui_input {
+  padding: 0.8rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  font-size: 1rem;
+  background-color: #f9f9f9;
+}
+
+.ui_input:hover {
+  border-color: #165ef0;
+  background-color: #fff;
+}
+
+.ui_input:focus {
+  border-color: #165ef0;
+  box-shadow: 0 0 6px rgba(22, 94, 240, 0.3);
+  background-color: #fff;
+}
+
+.ui_input::placeholder {
+  color: #999;
+  font-size: 0.9rem;
+}
+
+.ui_input:disabled {
+  background-color: #eaeaea;
+  cursor: not-allowed;
+}

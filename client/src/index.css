@@ -1,0 +1,90 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #f4f7fc;
+    font-family: "Inter", sans-serif;
+    color: #333;
+    line-height: 1.6;
+    padding: 20px;
+    background: linear-gradient(to right, rgba(150, 94, 240, 0.8), rgba(74, 144, 226, 0.8)),
+    url("https://www.freepik.com/free-vector/abstract-geometric-wireframe-background_13295527.htm#fromView=keyword&page=1&position=3&uuid=40c2a047-119c-464e-a107-7d890abfbe70&query=Login+Background");
+  }
+  
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    background: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Input Fields */
+  input {
+    width: 100%;
+    padding: 0.8rem;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    transition: all 0.3s ease-in-out;
+    background-color: #f9f9f9;
+  }
+  
+  input:hover {
+    border-color: #165ef0;
+  }
+  
+  input:focus {
+    border-color: #165ef0;
+    box-shadow: 0 0 8px rgba(22, 94, 240, 0.3);
+    background-color: #fff;
+    outline: none;
+  }
+  
+  /* Remove Number Input Arrows */
+  input[type="number"] {
+    -moz-appearance: textfield;
+  }
+  
+  input[type="number"]::-webkit-outer-spin-button,
+  input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  
+  /* Buttons */
+  button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #165ef0;
+    color: #fff;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+  }
+  
+  button:hover {
+    background-color: #0f4bcf;
+    transform: translateY(-2px);
+  }
+  
+  button:active {
+    transform: translateY(0);
+  }
+  
+  /* Utility Classes */
+  .center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  

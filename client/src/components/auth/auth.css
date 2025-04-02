@@ -1,0 +1,243 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+
+body {
+  background: linear-gradient(to right, #5c81cd, #4a90e2);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+
+.auth_main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 400px;
+  background-color: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+  animation: fadeIn 0.4s ease-in-out;
+}
+
+
+.auth_item {
+  display: flex;
+  flex-direction: column;
+}
+
+.auth_item label {
+  color: #666;
+  font-size: 14px;
+  font-weight: 500;
+  margin-bottom: 0.4rem;
+}
+
+.auth_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+
+.auth_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+}
+
+.auth_header svg {
+  font-size: 2.6rem;
+  border: 1px solid #ddd;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  padding: 0.6rem;
+  color: #333;
+  transition: transform 0.3s ease-in-out;
+}
+
+.auth_header svg:hover {
+  transform:  scale(1.2);
+}
+
+.auth_heading {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #222;
+  text-align: center;
+}
+
+.auth_title {
+  font-size: 13px;
+  color: #777;
+  text-align: center;
+}
+
+
+.auth_input {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: all 0.3s ease-in-out;
+  font-size: 1rem;
+}
+
+.auth_input:focus {
+  border-color: #165ef0;
+  outline: none;
+  box-shadow: 0 0 6px rgba(22, 94, 240, 0.3);
+}
+
+
+.auth_options {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 0;
+  font-size: 14px;
+}
+
+.auth_options a {
+  text-decoration: none;
+  color: #165ef0;
+  font-weight: 500;
+  transition: color 0.3s ease-in-out;
+}
+
+.auth_options a:hover {
+  color: #0f4bcf;
+  text-decoration: underline;
+}
+
+.otp_input_container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.otp_input {
+  text-align: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+  width: 50px;
+  height: 50px;
+  border: 2px solid #ccc;
+  border-radius: 8px;
+  transition: border-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+}
+
+.otp_input:focus {
+  border-color: #165ef0;
+  outline: none;
+  box-shadow: 0 0 6px rgba(22, 94, 240, 0.3);
+  transform: scale(1.1);
+}
+
+
+.timer {
+  color: #165ef0;
+  font-size: 14px;
+  padding: 1rem 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.otp_resend_action {
+  color: #165ef0;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: color 0.3s ease-in-out;
+}
+
+.otp_resend_action:hover {
+  color: #0f4bcf;
+}
+
+.auth_button {
+  width: 100%;
+  padding: 0.8rem;
+  border: none;
+  border-radius: 8px;
+  background: linear-gradient(to right, #165ef0, #4a90e2);
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+  margin-top: 1rem;
+}
+
+.auth_button:hover {
+  background: linear-gradient(to right, #0f4bcf, #165ef0);
+  transform: translateY(-3px);
+  box-shadow: 0px 5px 15px rgba(22, 94, 240, 0.3);
+}
+
+.auth_button:active {
+  transform: translateY(0);
+}
+
+.auth_inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.8rem;
+}
+
+.auth_social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-top: 1rem;
+}
+
+.auth_social button {
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 14px;
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.auth_social button:hover {
+  transform: scale(1.05);
+}
+
+.auth_social .google {
+  background-color: #dd4b39;
+  color: white;
+}
+
+.auth_social .facebook {
+  background-color: #3b5998;
+  color: white;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -60%);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%);
+  }
+}
